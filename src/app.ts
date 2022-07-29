@@ -1,10 +1,10 @@
 import express from 'express';
 
-const ProductRoutes = require('./routes/product.route')
+import ProductRoutes from './routes/product.route';
 
 const app = express();
 
 app.use(express.json());
-app.use(ProductRoutes)
+app.use(ProductRoutes);
 
 export default app;

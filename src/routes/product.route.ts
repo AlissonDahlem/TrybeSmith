@@ -7,4 +7,4 @@ const productsController = new ProductController();
 
 router.get('/products', productsController.getAll);
 
-export default router
+export default router;
