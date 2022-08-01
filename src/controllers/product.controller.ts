@@ -11,7 +11,7 @@ export default class ProductController {
     const productId = await this.productService.registerProduct(name, amount)
 
     res.status(201).json({id: productId, name, amount})
-  }
+  };
 
   public getAll = async (_req: Request, res: Response) => {
     const products = await this.productService.getAll();
